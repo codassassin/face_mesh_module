@@ -18,7 +18,6 @@ class FaceMeshDetector:
         self.drawSpec = self.mpDraw.DrawingSpec(thickness=1, circle_radius=1)
 
     def findFaceMesh(self, img, draw=True):
-
         self.imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         self.results = self.faceMesh.process(self.imgRGB)
         faces = []
